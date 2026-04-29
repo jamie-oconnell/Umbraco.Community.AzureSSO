@@ -42,8 +42,11 @@ namespace Umbraco.Community.AzureSSO.Settings
 		public string Domain => credentials.Domain;
 		public string TenantId => credentials.TenantId;
 		public string ClientId => credentials.ClientId;
+		public string ManagedIdentityClientId => credentials.ManagedIdentityClientId;
 		public string ClientSecret => credentials.ClientSecret;
 		public string CallbackPath => credentials.CallbackPath;
 		public string SignedOutCallbackPath => credentials.SignedOutCallbackPath;
+		public bool UseWorkloadIdentity => credentials.UseWorkloadIdentity;
+		public bool UseManagedIdentity => credentials.UseManagedIdentity;
 	}
 }
